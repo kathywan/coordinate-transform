@@ -20,7 +20,7 @@ const transform = {
         }
       } else {
         const transformed = result.rows[0]
-        response.json([transformed.x + '-test', transformed.y + 'test'])
+        response.json([transformed.x, transformed.y])
       }
     })    
   }
