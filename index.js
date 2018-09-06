@@ -7,7 +7,7 @@ const app = express()
 app.get('/proj4/:fromEpsg/:toEpsg/:x/:y/', proj4.transform)
 app.get('/postgis/:fromEpsg/:toEpsg/:x/:y/', postgis.transform)
 
-app.get('/hello', (req, res) => res.send('Great Demo!'))
+app.get('/hello', (req, res) => res.send('Yay, it works!'))
 
 app.get('/close', (req, res) => {
     console.log('Closing the server...')
